@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q1 Project</title>
+
+<style>
+body {
+  background-image: url(background.png);
+  background-size: cover;
+  background-position: center;
+  font-family: 'Gill Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+
+.topnav {
+  background-color: #202024;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.topnav img{
+  float: left;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin: 5px 15px;
+}
+.topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ff1e00;
+  color: white;
+}
+.topnav a.active {
+  background-color: #ff1e00;
+  color: white;
+}
+
+
+.container {
+  background-color: #202024;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 650px;
+  box-shadow: 0 0 10px rgba(255,255,255,0.1);
+}
+h1, h2, h3 {
+  text-align: center;
+  color: #ff1e00;
+}
+p {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+img.profile {
+  display: block;
+  margin: 20px auto;
+  width: 160px;
+  border-radius: 50%;
+  border: 3px solid #ff1e00;
+}
+ul, ol, dl {
+  margin-left: 30px;
+}
+a {
+  color: #ff1e00;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+input, textarea, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  background: #ff1e00;
+  color: white;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+button:hover {
+  background: white;
+  color: #202024;
+}
+</style>
+</head>
+<body>
+
+
+<div class="topnav">
+  <img src="LOGO.png" alt="My Logo">
+  <a href="#contact"><b>CONTACT ME</b></a>
+  <a href="#works"><b>MY WORKS</b></a>
+  <a href="#about"><b>ABOUT ME</b></a>
+  <a class="active" href="#home"><b>HOME</b></a>
+</div>
+
+
+<div class="container" id="home">
+  <h1>Welcome to My Personal Portfolio</h1>
+  <img src="my pfp.png" alt="My Profile Picture" class="profile">
+</div>
+
+
+<div class="container" id="about">
+  <h2>ABOUT ME</h2>
+  <p>Hi! I'm Madeline Narciso, an Grade 9 Emerald Student, who is yea stuff ICT and it's nice so that's good! This portfolio shows you things about myself and how to contact me so yea, please enjoy.</p>
+
+  <h3>MY SKILLS</h3>
+  <ul>
+    <li>Web Design</li>
+    <li>Basic Programming</li>
+    <li>Graphic Editing</li>
+  </ul>
+
+  <h3>HOBBIES</h3>
+  <ol>
+    <li>Drawing</li>
+    <li>Journalling</li>
+    <li>Swimming</li>
+  </ol>
+
+  <h3>FAVORITES</h3>
+  <ul>
+    <li><b>MY FAVORITE MOVIE:</b> Madagascar</li>
+    <li><b>MY FAVORITE CHARACTERS:</b> Snoopy and Minions</li>
+  </ul>
+</div>
+
+
+<div class="container" id="works">
+  <h2>MY WORKS</h2>
+  <img src="my work.png" alt="Sample Project" style="display:block;margin:auto;width:250px;border-radius:10px;border:2px solid #ff1e00;">
+  <p style="text-align:center;">Here's my project on my favorite movies!
+  </p>
+</div>
+
+<div class="container" id="contact">
+  <h2>CONTACT ME</h2>
+  <form>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email">
+
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="4"></textarea>
+
+    <button type="submit">SUBMIT</button>
+  </form>
+</div>
+
+</body>
+</html>
